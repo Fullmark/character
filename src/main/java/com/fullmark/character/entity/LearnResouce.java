@@ -4,14 +4,28 @@ package com.fullmark.character.entity;
  * @author fanghuanbiao
  */
 public class LearnResouce {
+    private Long id;
     private String author;
     private String title;
     private String url;
+
+    public LearnResouce() {
+    }
 
     public LearnResouce(String author, String title, String url) {
         this.author = author;
         this.title = title;
         this.url = url;
+    }
+
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getAuthor() {
