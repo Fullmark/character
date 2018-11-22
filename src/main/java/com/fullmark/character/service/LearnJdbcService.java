@@ -8,8 +8,7 @@ import java.util.Map;
 /**
  * @author fanghuanbiao
  */
-public interface LearnService {
-
+public interface LearnJdbcService {
     int add(LearnResouce learnResouce);
     int update(LearnResouce learnResouce);
     int deleteByIds(String ids);

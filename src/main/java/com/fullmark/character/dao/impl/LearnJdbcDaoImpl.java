@@ -15,8 +15,8 @@ import java.util.Map;
 /**
  * @author fanghuanbiao
  */
-@Repository
-public class LearnDaoImpl implements LearnDao {
+@Repository("learnJdbcDao")
+public class LearnJdbcDaoImpl implements LearnDao {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;

@@ -3,7 +3,6 @@ package com.fullmark.character.contorller;
 import com.fullmark.character.entity.LearnResouce;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -14,9 +13,9 @@ import java.util.List;
  * @author fanghuanbiao
  */
 @Controller
-@RequestMapping("/learn")
+@RequestMapping("/jspLearn")
 public class LearnJspController {
-    @RequestMapping("/jsp")
+    @RequestMapping
     public ModelAndView index(){
         List<LearnResouce> learnList =new ArrayList<LearnResouce>();
         LearnResouce bean =new LearnResouce("官方参考文档","Spring Boot Reference Guide","http://docs.spring.io/spring-boot/docs/1.5.1.RELEASE/reference/htmlsingle/#getting-started-first-application");
